@@ -7,9 +7,10 @@ void setup() {
   }
 void draw() 
 {
-  soucoupe(width/2);
-  soucoupe(100);
-  //soucoupe(450); //largeur()
+  soucoupe(300,30);
+  soucoupe(width/2,25);
+  soucoupe(100,25);
+  soucoupe(150,25); // largeur() hauteur() //(150,int (random(50)))
   //hublot (width/2);
   //hublot (50);
   //hublot (450);
@@ -17,13 +18,13 @@ void draw()
   stroke(150, 50, 0); 
   line(40, 10, 25, 250);
   line(40, 10, 50, 175);
-  
+  //hauteur++;
   
  }
  
-void soucoupe (int position)
+void soucoupe (int positionHorizontale, int hauteur)
 {
-  
+  //hauteur=25;
 fill(#ffe436);
 
 //ellipseMode(CORNERS);
@@ -33,8 +34,8 @@ fill(#ffe436);
 //ellipseMode(CORNER);
 fill(#ffe436);
 
-ellipse(position, 75, 100, 25);
-hublot(position);
+ellipse(positionHorizontale, 75, 100, hauteur);
+hublot(positionHorizontale);
 
 
   }
